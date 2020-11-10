@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-cli/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cli/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-cli/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <recent name="$PROJECT_DIR$/demo-service" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build github.com/cg-0508/laracom/demo-cli">
+  <component name="RunManager" selected="Go Build.go build github.com/cg-0508/laracom/demo-service">
     <configuration name="go build github.com/cg-0508/laracom/demo-cli" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="laracom" />
       <working_directory value="$PROJECT_DIR$/demo-cli" />
@@ -136,36 +135,40 @@
     <environment>
       <map>
         <entry key="GOPROXY" value="https://goproxy.io,direct" />
-        <entry key="MICRO_REGISTRY" value="etcd" />
+        <entry key="MICRO_REGISTRY" value="mdns" />
       </map>
     </environment>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1358" height="253" key="GridCell.Tab.0.bottom" timestamp="1605020181333">
-      <screen x="0" y="23" width="1920" height="982" />
+    <state width="1358" height="253" key="GridCell.Tab.0.bottom" timestamp="1605020593625">
+      <screen x="0" y="23" width="1920" height="980" />
     </state>
     <state width="1358" height="253" key="GridCell.Tab.0.bottom/0.23.1920.978@0.23.1920.978" timestamp="1604933596077" />
-    <state width="1358" height="253" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1605020181333" />
-    <state width="1358" height="253" key="GridCell.Tab.0.center" timestamp="1605020181333">
-      <screen x="0" y="23" width="1920" height="982" />
+    <state width="1358" height="253" key="GridCell.Tab.0.bottom/0.23.1920.980@0.23.1920.980" timestamp="1605020593625" />
+    <state width="1358" height="253" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1605020187586" />
+    <state width="1358" height="253" key="GridCell.Tab.0.center" timestamp="1605020593625">
+      <screen x="0" y="23" width="1920" height="980" />
     </state>
     <state width="1358" height="253" key="GridCell.Tab.0.center/0.23.1920.978@0.23.1920.978" timestamp="1604933596076" />
-    <state width="1358" height="253" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1605020181333" />
-    <state width="1358" height="253" key="GridCell.Tab.0.left" timestamp="1605020181333">
-      <screen x="0" y="23" width="1920" height="982" />
+    <state width="1358" height="253" key="GridCell.Tab.0.center/0.23.1920.980@0.23.1920.980" timestamp="1605020593625" />
+    <state width="1358" height="253" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1605020187585" />
+    <state width="1358" height="253" key="GridCell.Tab.0.left" timestamp="1605020593624">
+      <screen x="0" y="23" width="1920" height="980" />
     </state>
     <state width="1358" height="253" key="GridCell.Tab.0.left/0.23.1920.978@0.23.1920.978" timestamp="1604933596076" />
-    <state width="1358" height="253" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1605020181333" />
-    <state width="1358" height="253" key="GridCell.Tab.0.right" timestamp="1605020181333">
-      <screen x="0" y="23" width="1920" height="982" />
+    <state width="1358" height="253" key="GridCell.Tab.0.left/0.23.1920.980@0.23.1920.980" timestamp="1605020593624" />
+    <state width="1358" height="253" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1605020187585" />
+    <state width="1358" height="253" key="GridCell.Tab.0.right" timestamp="1605020593625">
+      <screen x="0" y="23" width="1920" height="980" />
     </state>
     <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.978@0.23.1920.978" timestamp="1604933596077" />
-    <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1605020181333" />
-    <state x="614" y="150" key="SettingsEditor" timestamp="1605019020918">
+    <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.980@0.23.1920.980" timestamp="1605020593625" />
+    <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1605020187586" />
+    <state x="614" y="150" key="SettingsEditor" timestamp="1605020630863">
       <screen x="0" y="23" width="1920" height="980" />
     </state>
     <state x="614" y="150" key="SettingsEditor/0.23.1920.978@0.23.1920.978" timestamp="1604931815992" />
-    <state x="614" y="150" key="SettingsEditor/0.23.1920.980@0.23.1920.980" timestamp="1605019020918" />
+    <state x="614" y="150" key="SettingsEditor/0.23.1920.980@0.23.1920.980" timestamp="1605020630863" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1604933120046">
       <screen x="0" y="23" width="1920" height="978" />
     </state>
