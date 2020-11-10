@@ -1,4 +1,4 @@
-module github.com/cg-0508/laracom
+module github.com/cg-0508/laracom/demo-service
 
 go 1.13
 
