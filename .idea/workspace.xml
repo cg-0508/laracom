@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/db/database.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/handler/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/proto/user/user.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/repo/repository.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/supervisord.conf" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/supervisord.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -166,11 +171,12 @@
     <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.978@0.23.1920.978" timestamp="1604933596077" />
     <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.980@0.23.1920.980" timestamp="1605020659424" />
     <state width="1358" height="253" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1605020187586" />
-    <state x="614" y="150" key="SettingsEditor" timestamp="1605020630863">
-      <screen x="0" y="23" width="1920" height="980" />
+    <state x="614" y="152" key="SettingsEditor" timestamp="1605947943062">
+      <screen x="0" y="23" width="1920" height="992" />
     </state>
     <state x="614" y="150" key="SettingsEditor/0.23.1920.978@0.23.1920.978" timestamp="1604931815992" />
     <state x="614" y="150" key="SettingsEditor/0.23.1920.980@0.23.1920.980" timestamp="1605020630863" />
+    <state x="614" y="152" key="SettingsEditor/0.23.1920.992@0.23.1920.992" timestamp="1605947943062" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1604933120046">
       <screen x="0" y="23" width="1920" height="978" />
     </state>

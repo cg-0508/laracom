@@ -9,6 +9,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
 RUN apk --no-cache add git
 
 WORKDIR /app/laracom-demo-service
+
 # 将当前项目所在目录代码拷贝到镜像中
 COPY . .
 RUN go mod download
