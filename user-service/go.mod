@@ -12,3 +12,5 @@ require (
 	golang.org/x/net v0.0.0-20201110031124-69a78807bb2b
 	google.golang.org/protobuf v1.25.0
 )
+
+replace google.golang.org/grpc => google.golang.org/grpc v1.26.0

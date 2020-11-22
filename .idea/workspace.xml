@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/db/database.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/handler/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/proto/user/user.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-service/repo/repository.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/go.sum" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,9 +177,14 @@
       <screen x="0" y="23" width="1920" height="978" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.23.1920.978@0.23.1920.978" timestamp="1604933120046" />
-    <state x="310" y="183" width="586" height="822" key="find.popup" timestamp="1604934948890">
+    <state x="310" y="183" width="586" height="822" key="find.popup" timestamp="1605951219536">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
-    <state x="310" y="183" width="586" height="822" key="find.popup/0.23.1920.982@0.23.1920.982" timestamp="1604934948890" />
+    <state x="310" y="183" width="586" height="822" key="find.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951219536" />
+    <state x="869" y="247" width="670" height="678" key="search.everywhere.popup" timestamp="1605951280651">
+      <screen x="0" y="23" width="1920" height="984" />
+    </state>
+    <state x="869" y="247" width="670" height="676" key="search.everywhere.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951203285" />
+    <state x="869" y="247" width="670" height="678" key="search.everywhere.popup/0.23.1920.984@0.23.1920.984" timestamp="1605951280651" />
   </component>
 </project>
