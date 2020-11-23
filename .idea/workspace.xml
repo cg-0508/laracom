@@ -23,6 +23,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-cli/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/user-cli/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-cli/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/user-cli/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/proto/user/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/proto/user/user.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/proto/user/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/proto/user/user.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,9 +205,10 @@
     <state x="869" y="247" width="670" height="676" key="search.everywhere.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951203285" />
     <state x="869" y="247" width="670" height="678" key="search.everywhere.popup/0.23.1920.984@0.23.1920.984" timestamp="1605951280651" />
     <state x="869" y="248" width="670" height="682" key="search.everywhere.popup/0.23.1920.989@0.23.1920.989" timestamp="1606054743142" />
-    <state x="654" y="358" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606141021860">
-      <screen x="0" y="23" width="1920" height="984" />
+    <state x="654" y="359" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606143759042">
+      <screen x="0" y="23" width="1920" height="986" />
     </state>
     <state x="654" y="358" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1920.984@0.23.1920.984" timestamp="1606141021860" />
+    <state x="654" y="359" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.23.1920.986@0.23.1920.986" timestamp="1606143759042" />
   </component>
 </project>

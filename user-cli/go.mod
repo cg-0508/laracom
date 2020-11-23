@@ -3,7 +3,7 @@ module github.com/cg-0508/laracom/user-cli
 go 1.13
 
 require (
-	github.com/cg-0508/laracom/user-service v0.0.0-20201122111616-dc742217b353
+	github.com/cg-0508/laracom/user-service v0.0.0-20201123145916-fbab5347e971
 	github.com/ghodss/yaml v1.0.1-0.20190212211648-25d852aebe32 // indirect
 	github.com/gogo/protobuf v1.2.2-0.20190723190241-65acae22fc9d // indirect
 	github.com/micro/cli/v2 v2.1.2
@@ -15,5 +15,3 @@ require (
 )
 
 replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
-
-replace github.com/cg-0508/laracom/user-service => /Users/chengang/code/laracom/user-service
