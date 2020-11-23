@@ -15,3 +15,5 @@ require (
 )
 
 replace google.golang.org/grpc => google.golang.org/grpc v1.26.0
+
+replace github.com/cg-0508/laracom/user-service => /Users/chengang/code/laracom/user-service
