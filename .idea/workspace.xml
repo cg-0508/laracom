@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-cli/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/user-cli/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-cli/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/user-cli/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/proto/user/extensions.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/proto/user/extensions.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/proto/user/user.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/proto/user/user.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/proto/user/user.pb.micro.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/proto/user/user.pb.micro.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/user-service/proto/user/user.proto" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/proto/user/user.proto" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
