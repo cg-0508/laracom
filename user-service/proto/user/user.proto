@@ -52,7 +52,6 @@ message Token {
 message PasswordReset {
     string email = 1;
     string token = 2;
-    string created_at = 3;
 }
 
 message PasswordResetResponse {

@@ -2,9 +2,10 @@ package handler
 
 import (
 	"errors"
-	"fmt"
+	"github.com/cg-0508/laracom/user-service/model"
 	"github.com/jinzhu/gorm"
 	"log"
+	"strconv"
 
 	pb "github.com/cg-0508/laracom/user-service/proto/user"
 	"github.com/cg-0508/laracom/user-service/repo"
@@ -20,47 +21,50 @@ type UserService struct {
 }
 
 func (srv *UserService) Get(ctx context.Context, req *pb.User, res *pb.Response) error {
-	user, err := srv.Repo.Get(req.Id)
-	if err != nil {
+	var userModel *model.User
+	var err error
+	if req.Id != "" {
+		id, _ := strconv.ParseUint(req.Id, 10, 64)
+		userModel, err = srv.Repo.Get(strconv.FormatUint(id, 10))
+	} else if req.Email != "" {
+		userModel, err = srv.Repo.GetByEmail(req.Email)
+	}
+	if err != nil && err != gorm.ErrRecordNotFound {
 		return err
 	}
-	res.User = user
+	if userModel != nil {
+		res.User, _ = userModel.ToProtobuf()
+	}
 	return nil
 }
 
 func (srv *UserService) GetAll(ctx context.Context, req *pb.Request, res *pb.Response) error {
 	users, err := srv.Repo.GetAll()
-	if err != nil {
+	if err != nil && err != gorm.ErrRecordNotFound {
 		return err
 	}
-	res.Users = users
+	userItems := make([]*pb.User, len(users))
+	for index, user := range users {
+		userItem, _ := user.ToProtobuf()
+		userItems[index] = userItem
+	}
+	res.Users = userItems
 	return nil
 }
 
 func (srv *UserService) Create(ctx context.Context, req *pb.User, res *pb.Response) error {
-	fmt.Print(111)
 	// 对密码进行哈希加密
 	hashedPass, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
-	fmt.Print(222)
-
 	if err != nil {
-		log.Fatalf("hashedPass error: %v", err)
 		return err
 	}
-	fmt.Print(333)
-
 	req.Password = string(hashedPass)
-	fmt.Print(444)
-
-	if err := srv.Repo.Create(req); err != nil {
-		log.Fatalf("创建用户失败: %v", err)
+	userModel := &model.User{}
+	user, _ := userModel.ToORM(req)
+	if err := srv.Repo.Create(user); err != nil {
 		return err
 	}
-	fmt.Print(555)
-
-	res.User = req
-	fmt.Print(666)
-
+	res.User, _ = user.ToProtobuf()
 	return nil
 }
 
@@ -96,7 +100,7 @@ func (srv *UserService) ValidateToken(ctx context.Context, req *pb.Token, res *p
 		return err
 	}
 
-	if claims.User.Id == "" {
+	if claims.User.ID == 0 {
 		return errors.New("无效的用户")
 	}
 
@@ -107,20 +111,23 @@ func (srv *UserService) ValidateToken(ctx context.Context, req *pb.Token, res *p
 
 
 func (srv *UserService) Update(ctx context.Context, req *pb.User, res *pb.Response) error {
-	if req.Id == "" {
-		return errors.New("用户 ID 不能为空")
-	}
 	if req.Password != "" {
+		// 如果密码字段不为空的话对密码进行哈希加密
 		hashedPass, err := bcrypt.GenerateFromPassword([]byte(req.Password), bcrypt.DefaultCost)
 		if err != nil {
 			return err
 		}
 		req.Password = string(hashedPass)
 	}
-	if err := srv.Repo.Update(req); err != nil {
+	if req.Id == "" {
+		return errors.New("用户 ID 不能为空")
+	}
+	id, _ := strconv.ParseUint(req.Id, 10, 64)
+	user, _ := srv.Repo.Get(strconv.FormatUint(id, 10))
+	if err := srv.Repo.Update(user); err != nil {
 		return err
 	}
-	res.User = req
+	res.User, _ = user.ToProtobuf()
 	return nil
 }
 
@@ -130,13 +137,16 @@ func (srv *UserService) CreatePasswordReset(ctx context.Context, req *pb.Passwor
 	if req.Email == "" {
 		return errors.New("邮箱不能为空")
 	}
+	resetModel := new(model.PasswordReset)
+	passwordReset, _ := resetModel.ToORM(req)
 	if err := srv.ResetRepo.Create(req); err != nil {
 		return err
 	}
-	res.PasswordReset = req
+	if passwordReset != nil {
+		res.PasswordReset, _ = passwordReset.ToProtobuf()
+	}
 	return nil
 }
-
 func (srv *UserService) ValidatePasswordResetToken(ctx context.Context, req *pb.Token, res *pb.Token) error {
 	// 校验用户亲求中的token信息是否有效
 	if req.Token == "" {
