@@ -67,9 +67,63 @@ services:
     networks:
       - microservice
 
+
+
+
+
+  laracom-product-service:
+    depends_on:
+      - laracom-product-db
+    build: ./product-service
+    restart: on-failure
+    ports:
+      - 9093:9091
+    environment:
+      MICRO_SERVER_ADDRESS: ":9091"
+      MICRO_REGISTRY: "mdns"
+      DB_HOST: "laracom-product-db:3306"
+      DB_NAME: "laracom_product"
+      DB_USER: "product"
+      DB_PASSWORD: "test"
+    networks:
+      - microservice
+
+
+  laracom-product-db:
+    image: mysql:5.7
+    ports:
+      - 3308:3306
+    volumes:
+      - db_product_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_USER: "product"
+      MYSQL_PASSWORD: "test"
+      MYSQL_DATABASE: "laracom_product"
+      MYSQL_ROOT_PASSWORD: "root"
+    networks:
+      - microservice
+
+  laracom-micro-api:
+    image: micro/micro:latest
+    container_name: laracom-micro-api
+    environment:
+      MICRO_REGISTRY: "mdns"
+    links:
+      - laracom-user-service
+      - laracom-product-service
+    ports:
+      - 8080:8080
+    networks:
+      - microservice
+    command: service api --handler=rpc --namespace=laracom.service
+
+
+
+
 volumes:
   db_data: {}
-
+  db_product_data: {}
 
 networks:
   microservice:

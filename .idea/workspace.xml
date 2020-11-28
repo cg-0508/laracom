@@ -20,13 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/product-service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/db/database.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/handler/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/model/product.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/proto/product/product.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/repo/product.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-cli/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/user-cli/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-cli/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/user-cli/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/db/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/db/database.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +162,10 @@
       <screen x="0" y="23" width="1920" height="989" />
     </state>
     <state x="647" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.989@0.23.1920.989" timestamp="1606534575473" />
+    <state x="914" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606560336441">
+      <screen x="0" y="23" width="1920" height="991" />
+    </state>
+    <state x="914" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.991@0.23.1920.991" timestamp="1606560336441" />
     <state x="970" y="229" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606534573962">
       <screen x="0" y="23" width="1920" height="989" />
     </state>
@@ -227,12 +234,12 @@
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="310" y="183" width="586" height="822" key="find.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951219536" />
-    <state x="869" y="248" width="670" height="682" key="search.everywhere.popup" timestamp="1606054743142">
+    <state x="869" y="248" width="670" height="682" key="search.everywhere.popup" timestamp="1606559784271">
       <screen x="0" y="23" width="1920" height="989" />
     </state>
     <state x="869" y="247" width="670" height="676" key="search.everywhere.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951203285" />
     <state x="869" y="247" width="670" height="678" key="search.everywhere.popup/0.23.1920.984@0.23.1920.984" timestamp="1605951280651" />
-    <state x="869" y="248" width="670" height="682" key="search.everywhere.popup/0.23.1920.989@0.23.1920.989" timestamp="1606054743142" />
+    <state x="869" y="248" width="670" height="682" key="search.everywhere.popup/0.23.1920.989@0.23.1920.989" timestamp="1606559784271" />
     <state x="654" y="359" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606143759042">
       <screen x="0" y="23" width="1920" height="986" />
     </state>
