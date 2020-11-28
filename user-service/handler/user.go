@@ -1,9 +1,11 @@
 package handler
 
 import (
+	"encoding/json"
 	"errors"
 	"github.com/cg-0508/laracom/user-service/model"
 	"github.com/jinzhu/gorm"
+	"github.com/micro/go-micro/v2/broker"
 	"log"
 	"strconv"
 
@@ -14,10 +16,14 @@ import (
 	"golang.org/x/net/context"
 )
 
+const topic  = "password.reset"
+
+
 type UserService struct {
 	Repo  repo.Repository
 	Token service.Authable
 	ResetRepo repo.PasswordResetInterface
+	PubSub broker.Broker
 }
 
 func (srv *UserService) Get(ctx context.Context, req *pb.User, res *pb.Response) error {
@@ -132,6 +138,25 @@ func (srv *UserService) Update(ctx context.Context, req *pb.User, res *pb.Respon
 }
 
 
+func (srv *UserService) publishEvent(reset *pb.PasswordReset) error {
+	// JSON 编码
+	body, err := json.Marshal(reset)
+	if err != nil {
+		return err
+	}
+	// 构建 broker 消息
+	msg := &broker.Message{
+		Header: map[string]string{
+			"email": reset.Email,
+		},
+		Body: body,
+	}
+	// 通过 broker 发布消息到消息系统
+	if err := srv.PubSub.Publish(topic, msg); err != nil {
+		log.Printf("[pub] failed: %v", err)
+	}
+	return nil
+}
 
 func (srv *UserService) CreatePasswordReset(ctx context.Context, req *pb.PasswordReset, res *pb.PasswordResetResponse) error {
 	if req.Email == "" {
@@ -144,9 +169,13 @@ func (srv *UserService) CreatePasswordReset(ctx context.Context, req *pb.Passwor
 	}
 	if passwordReset != nil {
 		res.PasswordReset, _ = passwordReset.ToProtobuf()
+		if err := srv.publishEvent(res.PasswordReset); err != nil {
+			return err
+		}
 	}
 	return nil
 }
+
 func (srv *UserService) ValidatePasswordResetToken(ctx context.Context, req *pb.Token, res *pb.Token) error {
 	// 校验用户亲求中的token信息是否有效
 	if req.Token == "" {
@@ -165,3 +194,4 @@ func (srv *UserService) ValidatePasswordResetToken(ctx context.Context, req *pb.
 	}
 	return nil
 }
+
