@@ -88,6 +88,12 @@ services:
     networks:
       - microservice
 
+  laracom-product-cli:
+    build: ./product-cli
+    environment:
+      MICRO_REGISTRY: "mdns"
+    networks:
+      - microservice
 
   laracom-product-db:
     image: mysql:5.7
