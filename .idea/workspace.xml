@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/product-cli/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/model/attribute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/model/brand.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/model/category.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/model/image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/repo/attribute.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/repo/brand.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/repo/category.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/repo/image.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-cli/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/product-cli/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-cli/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/product-cli/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-cli/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-cli/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/model/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/model/product.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/proto/product/product.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/proto/product/product.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/proto/product/product.pb.micro.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/proto/product/product.pb.micro.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/proto/product/product.proto" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/proto/product/product.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/repo/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/repo/product.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
