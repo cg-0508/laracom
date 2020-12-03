@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conf/e3w/config.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/alertmanager/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/grafana/config.monitoring" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/grafana/provisioning/dashboards/Docker Prometheus Monitoring-1571332751387.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/grafana/provisioning/dashboards/dashboard.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/grafana/provisioning/datasources/datasource.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/prometheus/alert.rules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/prometheus/prometheus.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user-service/db/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/db/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,16 +67,17 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/product-cli" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/conf" />
     <property name="settings.editor.selected.configurable" value="go.vgo" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/product-cli" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/demo-service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/conf" />
+      <recent name="$PROJECT_DIR$/product-cli" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build github.com/cg-0508/laracom/user-service">
@@ -233,12 +242,13 @@
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="310" y="183" width="586" height="822" key="find.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951219536" />
-    <state x="869" y="248" width="670" height="682" key="search.everywhere.popup" timestamp="1606559784271">
-      <screen x="0" y="23" width="1920" height="989" />
+    <state x="869" y="248" width="670" height="684" key="search.everywhere.popup" timestamp="1607002746884">
+      <screen x="0" y="23" width="1920" height="991" />
     </state>
     <state x="869" y="247" width="670" height="676" key="search.everywhere.popup/0.23.1920.982@0.23.1920.982" timestamp="1605951203285" />
     <state x="869" y="247" width="670" height="678" key="search.everywhere.popup/0.23.1920.984@0.23.1920.984" timestamp="1605951280651" />
     <state x="869" y="248" width="670" height="682" key="search.everywhere.popup/0.23.1920.989@0.23.1920.989" timestamp="1606559784271" />
+    <state x="869" y="248" width="670" height="684" key="search.everywhere.popup/0.23.1920.991@0.23.1920.991" timestamp="1607002746884" />
     <state x="654" y="359" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1606143759042">
       <screen x="0" y="23" width="1920" height="986" />
     </state>
