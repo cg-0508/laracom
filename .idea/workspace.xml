@@ -20,13 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/product-service/handler/attribute.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/handler/brand.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/handler/category.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/handler/image.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/e3w/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/handler/product.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/handler/product.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/db/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/db/database.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,9 +160,10 @@
       <screen x="0" y="23" width="1920" height="989" />
     </state>
     <state x="647" y="179" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.989@0.23.1920.989" timestamp="1606534575473" />
-    <state x="914" y="326" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606560336441">
-      <screen x="0" y="23" width="1920" height="991" />
+    <state x="914" y="325" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607000260885">
+      <screen x="0" y="23" width="1920" height="988" />
     </state>
+    <state x="914" y="325" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.988@0.23.1920.988" timestamp="1607000260885" />
     <state x="914" y="326" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.991@0.23.1920.991" timestamp="1606560336441" />
     <state x="970" y="229" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1606534573962">
       <screen x="0" y="23" width="1920" height="989" />
