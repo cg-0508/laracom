@@ -20,18 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1231a7ea-b277-48fb-a1ce-ef8d97f44eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conf/alertmanager/config.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/grafana/config.monitoring" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/grafana/provisioning/dashboards/Docker Prometheus Monitoring-1571332751387.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/grafana/provisioning/dashboards/dashboard.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/grafana/provisioning/datasources/datasource.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/prometheus/alert.rules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conf/prometheus/prometheus.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-service/trace/jaeger.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-cli/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/demo-cli/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-service/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/demo-service/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
